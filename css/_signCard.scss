@@ -19,12 +19,14 @@
 }
 .sign-card__title {
   @include text-preset-1;
+  color: $color-blue-800;
   margin-bottom: 24px;
 }
 
 .sign-card__text {
   @include text-preset-2;
   margin-bottom: 24px;
+   color: $color-blue-800;
 }
 
 .sign-card__list {
@@ -32,7 +34,7 @@
   flex-direction: column;
   gap: 8px;
   margin-bottom: 40px;
-
+color: $color-blue-800;
   li {
     display: flex;
     gap: 16px;
@@ -56,6 +58,7 @@
 
   & > div:first-child {
     @include text-preset-3;
+    color: $color-blue-800;
     display: flex;
     justify-content: space-between;
 
