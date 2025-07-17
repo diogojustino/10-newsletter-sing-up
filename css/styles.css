@@ -18,7 +18,7 @@
   color: #ffffff;
   font-family: "Roboto", sans-serif;
   font-size: 1rem;
-  line-height: 100%;
+  line-height: 150%;
   letter-spacing: 0px;
   font-weight: bold;
   padding: 16px 47px;
@@ -85,7 +85,7 @@ ul {
 .sign-card__text {
   font-family: "Roboto", sans-serif;
   font-size: 1rem;
-  line-height: 100%;
+  line-height: 150%;
   letter-spacing: 0px;
   font-weight: 400;
   margin-bottom: 24px;
@@ -105,7 +105,7 @@ ul {
   color: #242742;
   font-family: "Roboto", sans-serif;
   font-size: 1rem;
-  line-height: 100%;
+  line-height: 150%;
   letter-spacing: 0px;
   font-weight: 400;
 }
@@ -300,7 +300,7 @@ ul {
 .success-card__text {
   font-family: "Roboto", sans-serif;
   font-size: 1rem;
-  line-height: 100%;
+  line-height: 150%;
   letter-spacing: 0px;
   font-weight: 400;
 }

@@ -24,7 +24,7 @@ $font-family: "Roboto", sans-serif;
 @mixin text-preset-2($weight: 400) {
   font-family: $font-family;
   font-size: 1rem;
-  line-height: 100%;
+  line-height: 150%;
   letter-spacing: 0px;
   font-weight: $weight;
 }
