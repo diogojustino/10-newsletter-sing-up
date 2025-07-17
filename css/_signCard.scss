@@ -1,0 +1,152 @@
+.sign-card {
+  width: 100%;
+  background-color: white;
+}
+
+.sign-card__img {
+  margin: 0 auto;
+  display: block;
+  width: 100%;
+  height: 284px;
+  // max-height: 528px;
+  object-fit: cover;
+  //   object-position: center;
+  border-radius: 0 0 16px 16px;
+}
+
+.sign-card__content {
+  padding: 40px 24px;
+}
+.sign-card__title {
+  @include text-preset-1;
+  margin-bottom: 24px;
+}
+
+.sign-card__text {
+  @include text-preset-2;
+  margin-bottom: 24px;
+}
+
+.sign-card__list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 40px;
+
+  li {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+    &::before {
+      content: url("/assets/images/icon-list.svg");
+      // margin-right: 16px;
+    }
+  }
+
+  @include text-preset-2();
+}
+
+.sign-form__input-field {
+  border: none;
+
+  display: flex;
+  gap: 8px;
+  flex-direction: column;
+  margin-bottom: 24px;
+
+  & > div:first-child {
+    @include text-preset-3;
+    display: flex;
+    justify-content: space-between;
+
+    [id$="-error"] {
+      color: $color-red;
+    }
+  }
+
+  input {
+    border-radius: 8px;
+    border: 1px solid $color-blue-800;
+    padding: 16px 24px;
+    outline: none;
+  }
+
+  &:has([id$="-error"]:not(:empty)) {
+    input {
+      border-color: $color-red;
+      color: $color-red;
+
+      background-color: $color-red-100;
+      animation: shake 0.1s;
+    }
+  }
+}
+
+
+
+
+
+
+@media (min-width: 768px) {
+
+  body {
+    padding: 73px 80px;
+  }
+
+  .sign-card {
+    border-radius: 36px;
+    padding: 40px;
+    max-width: 643px;
+    margin: 0 auto;
+  }
+
+  .sign-card__content {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .sign-card__img {
+    height: 358px;
+    object-fit: cover;
+    border-radius: 16px;
+  }
+}
+
+
+@media (min-width: 1440px){
+
+    body{
+        padding-top: 219px;
+    }
+    .sign-card{
+        max-width: 904px;
+        display: flex;
+        flex-direction: row-reverse;
+        gap: 64px;
+        padding: 24px 32px;
+    }
+
+    .sign-card__img{
+        height: 100%;
+    }
+
+}
+
+@keyframes shake {
+    0%{
+        transform: translateX(0);
+    }
+    25%{
+        transform: translateX(10px);
+    }
+    50%{
+        transform: translateX(0px);
+    }
+    75%{
+        transform: translateX(-10px);
+    }
+    100%{
+        transform: translateX(0px);
+    }
+    
+}

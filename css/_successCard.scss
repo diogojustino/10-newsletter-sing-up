@@ -1,0 +1,39 @@
+.success-card {
+  width: 100%;
+  padding: 149px 24px 70px;
+  display: flex;
+  align-items: start;
+  gap: 32px;
+  flex-direction: column;
+  background-color: white;
+}
+
+.success-card__title {
+  @include text-preset-1;
+}
+
+.success-card__text {
+  @include text-preset-2;
+
+  span {
+    font-weight: bold;
+  }
+}
+
+.success-card__btn {
+  margin-top: 239px;
+}
+
+@media (min-width: 768px) {
+  .success-card {
+    padding: 64px 60px;
+    border-radius: 36px;
+    gap: 32px;
+    max-width:504px ;
+    margin: 0 auto;
+  }
+
+  .success-card__btn {
+    margin-top: 0px;
+  }
+}
