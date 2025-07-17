@@ -154,9 +154,14 @@ ul {
 
 .sign-form__input-field input {
   border-radius: 8px;
-  border: 1px solid #242742;
+  border: 1px solid #949494;
   padding: 16px 24px;
   outline: none;
+  color: #242742;
+}
+
+.sign-form__input-field input:active {
+  border-color: #242742;
 }
 
 .sign-form__input-field:has([id$="-error"]:not(:empty)) input {
@@ -195,6 +200,7 @@ ul {
   }
   .sign-card {
     max-width: 904px;
+    height: 641px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -206,7 +212,10 @@ ul {
     padding: 24px 32px;
   }
   .sign-card__img {
-    height: 100%;
+    width: 400px;
+    height: -webkit-min-content;
+    height: -moz-min-content;
+    height: min-content;
   }
 }
 

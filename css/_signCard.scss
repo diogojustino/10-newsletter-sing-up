@@ -66,9 +66,13 @@
 
   input {
     border-radius: 8px;
-    border: 1px solid $color-blue-800;
+    border: 1px solid $color-grey;
     padding: 16px 24px;
     outline: none;
+    color: $color-blue-800;
+    &:active{
+      border-color: $color-blue-800;
+    }
   }
 
   &:has([id$="-error"]:not(:empty)) {
@@ -120,6 +124,7 @@
     }
     .sign-card{
         max-width: 904px;
+        height: 641px;
         display: flex;
         flex-direction: row-reverse;
         gap: 64px;
@@ -127,7 +132,8 @@
     }
 
     .sign-card__img{
-        height: 100%;
+      width: 400px;
+        height: min-content;
     }
 
 }
