@@ -36,7 +36,7 @@ Users should be able to:
 
 ### Links
 
-- Live Site URL: [Link]()
+- Live Site URL: [Link](https://10-newsletter-sing-up.vercel.app/)
 
 ## My process
 
